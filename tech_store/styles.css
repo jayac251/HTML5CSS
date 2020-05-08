@@ -1,0 +1,181 @@
+html {
+    background: grey;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: midnightblue
+}
+
+header,
+footer {
+    background: #002699;
+    color: white;
+    padding: 10px;
+}
+
+.product {
+    border: 1px solid steelblue;
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar {
+    float: right;
+}
+
+main {
+    width: 680px;
+    display: inline-block;
+    padding: 10px;
+}
+
+aside {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+header h1,
+nav {
+    display: inline-table;
+}
+
+img {
+    max-width: 200px;
+    max-height: 100px;
+    vertical-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+}
+
+footer li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: chocolate;
+}
+
+header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.button {
+    padding: 10px;
+}
+
+.button:last-of-type {
+    background-color: darkblue;
+    color: white;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+    color: black;
+}
+
+aside {
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}
+
+
+/*Product Detail page*/
+
+.product-detail {
+    width: 660px;
+}
+
+.product-detail img {
+    max-width: 50%;
+    float: right;
+}
+
+.product-detail p:last-of-type {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+/*Contact us page */
+
+form {
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px
+}
+
+
+/* all div tags in form*/
+
+form>div {
+    margin: 10px 0;
+}
+
+.inline label {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*table*/
+
+table {
+    width: 400px;
+    text-align: left;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+caption {
+    font-weight: bolder;
+    border-bottom: brown 1px dotted;
+    color: darkgreen;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+tr:hover {
+    background: rgb(179, 169, 240);
+}

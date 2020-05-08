@@ -3,20 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tech Store</title>
+    <title>Tech Store - Contact us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Tech Store</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </nav>
-        <input type="search" placeholder="Search...">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <input type="search" placeholder="Search...">
+        </div>
     </header>
     <aside>
         <section>
@@ -47,15 +51,15 @@
     <main>
         <h2>Contact us:</h2>
         <form action="" method="">
-            <div>
+            <div class="inline">
                 <label for="name">Name: </label>
                 <input type="text" placeholder="Enter your name" id="name" name="name" />
             </div>
-            <div>
+            <div class="inline">
                 <label for="email">Email: </label>
                 <input type="email" placeholder="Enter your email id" id="email" name="email" />
             </div>
-            <div>
+            <div class="inline">
                 <label for="message">Message: </label>
                 <textarea cols="30" rows="5" id="message" name="message"></textarea>
             </div>
@@ -76,7 +80,7 @@
                    </optgroup>                   
                 </select>
             </div> -->
-            <div>
+            <div class="inline">
                 <label for="subject">Subject: </label>
                 <input type="text" list="subjects" placeholder="Enter your subject" id="subject" />
                 <datalist id="subjects">
@@ -88,16 +92,17 @@
                     <option value="others"></option>
                 </datalist>
             </div>
-            <div>
+            <div class="inline">
                 <p>Subscribe to future offers by: </p>
-                <label for="newsletter">Newsletter </label>
-                <input type="checkbox" id="newsletter" value="newsletter" name="subscribe" />
-                <label for="email">Email </label>
-                <input type="checkbox" id="email" value="email" name="subscribe" />
-                <label for="post">Post </label>
-                <input type="checkbox" id="post" value="post" name="subscribe" />
             </div>
-            <div>
+            <label for="newsletter">Newsletter </label>
+            <input type="checkbox" id="newsletter" value="newsletter" name="subscribe" />
+            <label for="email">Email </label>
+            <input type="checkbox" id="email" value="email" name="subscribe" />
+            <label for="post">Post </label>
+            <input type="checkbox" id="post" value="post" name="subscribe" />
+
+            <div class="inline">
                 <p>How would you like us to respond?
             </div>
             </p>
@@ -106,14 +111,12 @@
             <label for="emailResponse">Email </label>
             <input type="radio" id="EmailResponse" name="response" value="email" />
             </div>
-            <div>
+            <div class="inline">
                 <input type="submit">
                 <input type="reset">
             </div>
         </form>
-        <iframe width="600" height="450" frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/view?zoom=14&center=12.9455%2C80.1229&key=AIzaSyArXRsfrD3YO4y80VS1JJuNCovCfKNyQqk"
-            allowfullscreen></iframe>
+        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=14&center=12.9455%2C80.1229&key=AIzaSyArXRsfrD3YO4y80VS1JJuNCovCfKNyQqk" allowfullscreen></iframe>
     </main>
     <footer>
         <nav>

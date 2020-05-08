@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Tech Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <h1>Tech Store</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </nav>
-        <input type="search" placeholder="Search...">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <input type="search" placeholder="Search...">
+        </div>
     </header>
     <aside>
         <section>
@@ -45,66 +49,127 @@
         </section>
     </aside>
     <main>
-        <h2>All items</h2>
-        <div>
-            <a href="product-detail.html"> <img src="images/controller.jpg" alt="Game Controller" width="300" /></a>
+        <h3>All items</h3>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/controller.jpg" alt="Game Controller" /></a>
             <a href="product-detail.html">
                 <h4>Game Controllers</h4>
             </a>
             <p>$ 79.96</p>
-            <p>Awesome Game controller <br />for xbox!</p>
-            <a href="product-detail.html">More Info</a>
-            <a href="">Add to Cart</a>
+            <p>Awesome Game controller for xbox!</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button" id="postest">Add to Cart</a>
         </div>
-        <div>
-            <a href="product-detail.html"> <img src="images/headphone.jpg" alt="Sony Headphones" width="300"/></a>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/headphone.jpg" alt="Sony Headphones" /></a>
             <a href="product-detail.html">
                 <h4>Sony Headphones</h4>
             </a>
             <p>$ 69.40</p>
-            <p>Awesome Sony Blue Headphone <br />for Stereo music!</p>
-            <a href="product-detail.html">More Info</a>
-            <a href="">Add to Cart</a>
+            <p>Awesome Sony Blue Headphone for Stereo music!</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button" id="postest">Add to Cart</a>
         </div>
-        <div>
-            <a href="product-detail.html"> <img src="images/camera.jpg" alt="Canon Camera" width="300"/></a>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/camera.jpg" alt="Canon Camera" /></a>
             <a href="product-detail.html">
                 <h4>Canon Camera</h4>
             </a>
             <p>$ 100.96</p>
             <p>Canon TruShot A450 Camera</p>
-            <a href="product-detail.html">More Info</a>
-            <a href="">Add to Cart</a>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
         </div>
-        <div>
-            <a href="product-detail.html"> <img src="images/microphone.jpg" alt="Xperia Microphones" width="300"/></a>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/microphone.jpg" alt="Xperia Microphones" /></a>
             <a href="product-detail.html">
                 <h4>Xperia Microphones</h4>
             </a>
             <p>$ 63.11</p>
             <p>Xperia Clear voice microphone with puff speakers</p>
-            <a href="product-detail.html">More Info</a>
-            <a href="">Add to Cart</a>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
         </div>
-        <div>
-            <a href="product-detail.html"> <img src="images/cables.jpg alt="Cables" width="300"/></a>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/cables.jpg" alt="Cables" /></a>
             <a href="product-detail.html">
                 <h4>Cables</h4>
             </a>
             <p>$ 10.14</p>
             <p>Awesome cables available in different lengths</p>
-            <a href="product-detail.html">More Info</a>
-            <a href="">Add to Cart</a>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
         </div>
-        <div>
-            <a href="product-detail.html"> <img src="images/lenses.jpeg" alt="Canon Camera Lens" width="300"/></a>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/lenses.jpeg" alt="Canon Camera Lens" /></a>
             <a href="product-detail.html">
                 <h4>Canon Camera Dual focus lens</h4>
             </a>
             <p>$ 105.66</p>
             <p>Awesome camera lens for canon models &lt; 2020!</p>
-            <a href="product-detail.html">More Info</a>
-            <a href="">Add to Cart</a>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
+        </div>
+
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/controller.jpg" alt="Game Controller" /></a>
+            <a href="product-detail.html">
+                <h4>Game Controllers</h4>
+            </a>
+            <p>$ 79.96</p>
+            <p>Awesome Game controller for xbox!</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
+        </div>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/headphone.jpg" alt="Sony Headphones" /></a>
+            <a href="product-detail.html">
+                <h4>Sony Headphones</h4>
+            </a>
+            <p>$ 69.40</p>
+            <p>Awesome Sony Blue Headphone for Stereo music!</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
+        </div>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/camera.jpg" alt="Canon Camera" /></a>
+            <a href="product-detail.html">
+                <h4>Canon Camera</h4>
+            </a>
+            <p>$ 100.96</p>
+            <p>Canon TruShot A450 Camera</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
+        </div>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/microphone.jpg" alt="Xperia Microphones" /></a>
+            <a href="product-detail.html">
+                <h4>Xperia Microphones</h4>
+            </a>
+            <p>$ 63.11</p>
+            <p>Xperia Clear voice microphone with puff speakers</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
+        </div>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/cables.jpg" alt="Cables" /></a>
+            <a href="product-detail.html">
+                <h4>Cables</h4>
+            </a>
+            <p>$ 10.14</p>
+            <p>Awesome cables available in different lengths</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
+        </div>
+        <div class="product">
+            <a href="product-detail.html"> <img src="images/lenses.jpeg" alt="Canon Camera Lens" /></a>
+            <a href="product-detail.html">
+                <h4>Canon Camera Dual focus lens</h4>
+            </a>
+            <p>$ 105.66</p>
+            <p>Awesome camera lens for canon models &lt; 2020!</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
         </div>
     </main>
     <footer>

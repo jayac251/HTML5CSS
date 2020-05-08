@@ -3,20 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tech Store</title>
+    <title>Tech Store - Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Tech Store</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </nav>
-        <input type="search" placeholder="Search...">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+            <input type="search" placeholder="Search...">
+        </div>
     </header>
     <aside>
         <section>
@@ -46,15 +50,17 @@
     </aside>
     <main>
         <h2>All items</h2>
-        <div>
+        <div class="product product-detail">
             <a href="product-detail.html"> <img src="images/controller.jpg" alt="Game Controller" width="300" /></a>
             <a href="product-detail.html">
                 <h4>Game Controllers</h4>
             </a>
             <p>$ 79.96</p>
-            <p>Awesome Game controller <br />for xbox!</p>
-            <a href="product-detail.html">More Info</a>
-            <a href="">Add to Cart</a>
+            <p>Awesome Game controller for xbox!</p>
+            <a href="product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add to Cart</a>
+            <p> Lithium Polymer 600mAh battery for playing up to 12 hours in a row, Wireless 2.4GHz technology with a range of up to 8 meters, Integrated Dual Mode: X-input and Direct-input for greater games compatibility. Ultra-precise eight-way D Cross,
+                1 year warranty Customer Care: 1800 100 7225 Dongle should be directly in sight of controller</p>
         </div>
         <table>
             <caption><i>Buy in bulk and save !</i></caption>
