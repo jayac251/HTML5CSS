@@ -16,6 +16,7 @@
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
+        <input type="search" placeholder="Search...">
     </header>
     <aside>
         <section>
@@ -58,6 +59,35 @@
                 <label for="message">Message: </label>
                 <textarea cols="30" rows="5" id="message" name="message"></textarea>
             </div>
+            <!--  <div>
+                <label for="subject">Subject: </label>
+                <select id="select" >
+                   <optgroup label="Product Issues">
+                    <option value="returns">Returns</option>
+                    <option value="faulty_item">Faulty Item</option>
+                   </optgroup>
+                   <optgroup label="Delivery">
+                    <option value="delivery">Delivery info</option>
+                    <option value="order_tracking">Tracking</option>
+                   </optgroup>
+                   <optgroup label="Other">
+                    <option value="advice">Advice</option>
+                    <option value="others">Others</option>
+                   </optgroup>                   
+                </select>
+            </div> -->
+            <div>
+                <label for="subject">Subject: </label>
+                <input type="text" list="subjects" placeholder="Enter your subject" id="subject" />
+                <datalist id="subjects">
+                    <option value="returns"></option>
+                    <option value="faulty_item"></option>
+                    <option value="delivery"></option>
+                    <option value="order_tracking"></option>
+                    <option value="advice"></option>
+                    <option value="others"></option>
+                </datalist>
+            </div>
             <div>
                 <p>Subscribe to future offers by: </p>
                 <label for="newsletter">Newsletter </label>
@@ -68,14 +98,22 @@
                 <input type="checkbox" id="post" value="post" name="subscribe" />
             </div>
             <div>
-                <p>How would you like us to respond?</div></p>
-                <label for="phoneResponse">Phone </label>
-                <input type="radio" id="phoneResponse" name="response" value="phone"/>
-                <label for="emailResponse">Email </label>
-                <input type="radio" id="EmailResponse"  name="response" value="email"/>
+                <p>How would you like us to respond?
             </div>
-
+            </p>
+            <label for="phoneResponse">Phone </label>
+            <input type="radio" id="phoneResponse" name="response" value="phone" />
+            <label for="emailResponse">Email </label>
+            <input type="radio" id="EmailResponse" name="response" value="email" />
+            </div>
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
         </form>
+        <iframe width="600" height="450" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/view?zoom=14&center=12.9455%2C80.1229&key=AIzaSyArXRsfrD3YO4y80VS1JJuNCovCfKNyQqk"
+            allowfullscreen></iframe>
     </main>
     <footer>
         <nav>
