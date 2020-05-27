@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #container {
+            background: lightgreen;
+            /* height: 100vh; */
+            display: flex;
+            /* flex-direction: row,row-reverse,column,column-reverse */
+            /*flex-direction: row;*/
+            /* Wrap items */
+            /*flex-wrap: wrap;*/
+            /* combination of both flex direction & wrap */
+            /* flex-flow: row wrap;
+            justify-content: center;
+            /*justify-content: space-between,space-around can also be used*/
+            /* align-items: baseline;
+            /* align-items: stretch is default, can use flex start and flex end which alignes the items to the other items size if configued 
+            base line will align the item text evenly(check hr tag)*/
+            /* align-content: flex-start; */
+            flex-flow: row wrap;
+            height: 100vh;
+        }
+        
+        .item {
+            background: lightcoral;
+            padding: 30px;
+            margin: 10px;
+            text-align: center;
+            flex: 0 1 auto;
+            /* flex = flex grow , flex shrink and flex basis */
+        }
+        
+        .order {
+            order: 1;
+            /* negative value has high priority */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="item">Item 1</div>
+        <div class="item order">Item 2</div>
+        <div class=" item ">Item 3</div>
+        <div class="item ">Item 4</div>
+        <div class="item ">Item 5</div>
+        <div class="item ">Item 6</div>
+        <div class="item ">Item 7</div>
+        <div class="item" style="align-self: flex-end;">Item 8</div>
+        <div class="item ">Item 9</div>
+        <div class="item ">Item 10</div>
+        <div class="item ">Item 11</div>
+        <div class="item ">Item 12</div>
+        <div class="item ">Item 13</div>
+    </div>
+
+</body>
+
+</html>
