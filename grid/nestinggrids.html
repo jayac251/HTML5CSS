@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting Grids</title>
+    <style>
+        #container {
+            display: grid;
+            background: lightgreen;
+            grid-template-areas: "header header""main aside""footer footer";
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 1fr 6fr 1fr;
+            grid-gap: 20px 10px;
+        }
+        
+        .item {
+            background: lightpink;
+            padding: 30px;
+            border: 1px dashed;
+        }
+        
+        header {
+            grid-row: header;
+            grid-column: header;
+        }
+        
+        main {
+            grid-row: main;
+            grid-column: main;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        aside {
+            grid-row: aside;
+            grid-column: aside;
+        }
+        
+        footer {
+            grid-row: footer;
+            grid-column: footer;
+        }
+        
+        header,
+        main,
+        aside,
+        footer {
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>Header</header>
+        <main>
+            <div class="item">Item1</div>
+            <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ea voluptatem error dolor iusto laudantium recusandae molestias doloribus optio. Consequatur aliquid architecto error possimus ad accusamus ratione alias illum non.</div>
+            <div class="item">Item3</div>
+            <div class="item">Item4</div>
+            <div class="item">Item5</div>
+            <div class="item">Item6</div>
+            <div class="item">Item7</div>
+            <div class="item">Item8</div>
+            <div class="item">Item9</div>
+            <div class="item">Item10</div>
+            <div class="item">Item11</div>
+            <div class="item">Item12</div>
+            <div class="item">Item13</div>
+        </main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

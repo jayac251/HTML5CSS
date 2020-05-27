@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        /* #container {
+            display: grid;
+            background: lightgreen;
+            /* grid-template-columns: 100px 300px 80px auto; */
+        /* grid-template-columns: 100px repeat(4, 200px); */
+        /* grid-template-columns: repeat(3, 1fr) 2fr; */
+        /* grid-template-columns: minmax(150px, 200px) 1fr 2fr; */
+        /*fr means fractional*/
+        /* grid-template-rows: 200px 100px 100px; */
+        /* grid-template-rows: 200px repeat(4, auto); */
+        /* grid-column-gap: 20px; 
+            grid-row-gap: 20px;*/
+        /* grid-gap = grid columngap and grid row gap */
+        /* grid-gap: 20px 10px; */
+        /* row and col */
+        /* } */
+        
+        #container {
+            display: grid;
+            background: lightgreen;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 2fr);
+            grid-gap: 20px 10px;
+        }
+        
+        .item {
+            background: lightpink;
+            padding: 30px;
+            border: 1px dashed;
+        }
+        
+        .item1 {
+            background: lightskyblue;
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+            /*or we canalso use grid row */
+            /* grid-row: 1/2; */
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+            /* grid-column: 2/4; */
+            /*grid area=rowstart/colstart/rowend/colend*/
+            /* grid-area: 1/2/2/4 */
+            grid-area: 1/2/span 2/4
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item1">Item1</div>
+        <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ea voluptatem error dolor iusto laudantium recusandae molestias doloribus optio. Consequatur aliquid architecto error possimus ad accusamus ratione alias illum non.</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item">Item9</div>
+        <div class="item">Item10</div>
+        <div class="item">Item11</div>
+        <div class="item">Item12</div>
+        <div class="item">Item13</div>
+    </div>
+
+</body>
+
+</html>
