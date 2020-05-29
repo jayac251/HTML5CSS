@@ -1,0 +1,18 @@
+.col-md-4>img {
+    width: 140px;
+    height: 140px;
+}
+
+.carousel-item>img {
+    width: 140px;
+    height: 700px;
+}
+
+.myheader {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.corosalblock {
+    background-color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
