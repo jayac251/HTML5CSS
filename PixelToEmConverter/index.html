@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel to Em Converter tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mySpace">
+            <div class="inline">
+                <label for="parentSize">Parent Size(px): </label>
+                <input type="number" id="parentSize" name="parentSize" />
+            </div>
+            <div class="inline">
+                <label for="reqSize">Required size (px): </label>
+                <input type="number" id="reqSize" name="reqSize" />
+            </div>
+            <div class="inline">
+                <button id="btnResult">Convert &#10227;</button>
+            </div>
+        </div>
+        <div class="mySpace">
+            <div class="inline">
+                <label id="result" for="result">Result: </label>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    btnResult.addEventListener("click", () => {
+        var parentSize = document.getElementById("parentSize").value;
+        console.log("Parent size: " + parentSize);
+        var requiredSize = document.getElementById("reqSize").value;
+        console.log("Required size: " + requiredSize);
+        if (!parentSize || !requiredSize) {
+            alert("either value is null");
+        } else {
+            var result = requiredSize / parentSize;
+            console.log("Result: " + result);
+            document.getElementById("result").innerHTML = "Result: " + result + " em";
+        }
+
+
+    })
+</script>
+
+
+</html>
