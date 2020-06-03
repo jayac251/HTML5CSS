@@ -1,0 +1,15 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: lightyellow;
+    height: auto;
+    width: auto;
+}
+
+header,
+footer {
+    background: lightblue;
+}
